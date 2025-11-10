@@ -29,25 +29,25 @@
 
             <div class="conteudo">
 
-                <section class="cards-telaprincipal">
-                    <article>
-                        <img src="/imagens/mobilidade.card.png" alt="">
-                        <p>MOBILIDADE</p>
-                        <a href="#" class="botao-clique-aqui">Clique Aqui</a>
-                    </article>
+                <section>
+                    <h1>Pedidos de Comida</h1>
 
-                    <article>
-                        <img src="/imagens/entregas.card.png" alt="">
-                        <p>ENTREGAS</p>
-                        <a href="#" class="botao-clique-aqui">Clique Aqui</a>
+                    <form id="pedidoForm">
+                        <label>Nome do Cliente:</label>
+                        <input type="text" id="nome" required>
 
-                    </article>
+                        <label>Comida:</label>
+                        <input type="text" id="comida" required>
 
-                    <article>
-                        <img src="/imagens/comida.card.png" alt="">
-                        <p>PEÇA SUA REFEIÇÃO</p>
-                        <a href="/telapedidos.html" class="botao-clique-aqui">Clique Aqui</a>
-                    </article>
+                        <label>Endereço:</label>
+                        <input type="text" id="endereco" required>
+
+                        <button class="btn-pedido" type="submit">Fazer Pedido</button>
+                    </form>
+
+                    <h2>Pedidos Registrados</h2>
+                    <ul id="listaPedidos"></ul>
+
                 </section>
 
                 <section class="avaliacao-servicos">
@@ -74,7 +74,6 @@
                     <textarea id="comentario" placeholder="Deixe um comentário (opcional)" rows="4"></textarea>
                     <button id="enviarAvaliacao" class="botao-enviar">Enviar Avaliação</button>
                 </section>
-
   
             </div>
         </main>
